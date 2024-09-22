@@ -1,7 +1,4 @@
-// import React from 'react';
 import styles from './Profile.module.css';
-
-// console.log(styles);
 
 const Profile = ({ name, tag, location, image, stats }) => {
   return (
@@ -13,15 +10,15 @@ const Profile = ({ name, tag, location, image, stats }) => {
         <p className={styles.location}>{location}</p>
       </div>
       <ul className={styles.stats}>
-        <li className={styles.statsItem}>
+        <li className={styles.stats_item}>
           <span className="stats-header">Followers</span>
           <span className={styles.statsData}>{stats.followers}</span>
         </li>
-        <li className={styles.statsItem}>
+        <li className={styles.stats_item}>
           <span className="stats-header">Views</span>
           <span className={styles.statsData}>{stats.views}</span>
         </li>
-        <li className={styles.statsItem}>
+        <li className={styles.stats_item}>
           <span className="stats-header">Likes</span>
           <span className={styles.statsData}>{stats.likes}</span>
         </li>
